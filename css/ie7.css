@@ -1,0 +1,28 @@
+#status-bar{
+    height: 50px;
+    background-position: bottom;
+}
+#action-bar{
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+#action-bar a{
+    margin-right: 5px;
+}
+#content{
+    padding-bottom: 0px;
+    padding-top: 75px;
+}
+#tabs{
+    top: 10px;
+}
+#slideshow-commands h4{
+    left: 0px;
+    position: absolute;
+    top: 4px;
+}
+.blog-entry blockquote{
+    padding-top: 5px;
+}

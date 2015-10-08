@@ -1,0 +1,356 @@
+@import url(reset.css);
+@import url('typography.css');
+body{
+	width: 100%;
+	margin: auto;
+	background: #f8f8f8;
+}
+/*Начало блока поиска(шапка)*/
+#status-bar{
+	width: 100%;
+	height: 40px;
+	background: url('../images/status-bar-bg.png') repeat-x;
+	border-bottom: 2px groove #ffffff;
+}
+#status-bar-content{
+	width: 800px;
+	margin: 10px auto 0px auto;
+}
+#status-bar-commands{
+	width: 400px;
+}
+#search-form{
+	width: 200px;
+	float: right;
+}
+#welcome{
+	width: 150px;
+	float:left; 
+	padding: 7px 0 0 0;
+}
+#action-bar{
+	width: 151px;
+	height: 14px;
+	background: url('../images/action-bar-bg.png') no-repeat;
+	padding: 8px 28px;
+	margin: 0 0 0 200px;
+}
+#action-bar a:before{
+	content: '| ';
+}
+#action-bar a[title="License"]:after{
+	content: ' |';
+}
+#search-form input[type="text"]{
+	width:170px;
+	height:20px;
+	background: url(../images/search-field.png) no-repeat;
+	border:none;
+	padding: 2px 0px 0px 30px;
+
+}
+#search-form input[type="submit"]{
+	display: none;
+}
+/*Конец блока поиска(шапка)*/
+/*Начало блока header*/
+#header{
+	width: 100%;
+	height: 250px;
+	background: #6eb9cc url('../images/header-image.jpg') center no-repeat;
+	border-bottom: 2px ridge #ffffff;
+}
+
+#logo{
+	width: 800px;
+	margin: auto;
+	padding: 35px 0 0;
+}
+/*Конец блока header*/
+/*Начало блока content*/
+#content{
+	width: 800px;
+	margin: auto;
+	position: relative;
+	padding: 0 0 50px;
+}
+#content-top-shadow{
+	width: 100%;
+	height: 20px;
+	background: url('../images/content-top-shadow.png') repeat-x;
+}
+content-bottom-shadow{
+	width: 100%;
+	height: 20px;
+	background: url('../images/content-bottom-shadow.png') repeat-x;
+	clear: both;
+}
+/*Начало центрального блока*/
+#page-wrapper{
+	width: 768px;
+	height: 233px;/*340*/
+	background: #ffffff;
+	border: 1px solid #bababa;
+	margin: 75px 0 0;
+	padding: 15px;
+	overflow: hidden;
+	clear: both;
+}
+/*Начало слайдшоу блока*/
+#slideshow{
+	width: 375px;
+	border-right: 1px solid #b2b2b2;
+	float: left;
+	padding: 0 15px 0 0;
+}
+#slides{
+	width: 370px;
+	height: 200px;
+	border: 1px solid #a7a7a7;
+}
+#slides a.thumb{
+	display:none;
+}
+#slides a.default-slide{
+	display:block;
+}
+#slideshow-commands{
+	width: 290px;
+	height: 19px;
+	background: url('../images/commands-bg.png') no-repeat;
+	position: relative;
+	left: 15px;
+	padding: 3px 25px;
+}
+#previous-slide{
+	width: 9px;
+	height: 12px;
+	background: url('../images/commands-previous-slide.png') no-repeat;
+	display: block;
+	float: left;
+	margin: 2px 0 0;
+	text-indent: -9000px;
+}
+#next-slide{
+	width: 11px;
+	height: 12px;
+	background: url('../images/commands-next-slide.png') no-repeat;
+	display: block;
+	float: right;
+	margin: 2px 0 0;
+	text-indent: -9000px;
+}
+#slideshow-commands h4{
+	width:100%;
+	margin: 1px 0 0;
+}
+/*Конец слайдшоу блока*/
+/*Начало блока сообщения*/
+#message{
+	width: 350px;
+	margin: 0 0 0 410px;
+}
+#message h3{
+	margin: 0 0 20px;
+}
+#contact-info span{
+display: block;
+}
+#phone{
+	width: 125px;
+	background: url('../images/phone-icon.png') no-repeat 0px 1px;
+	float: left;
+	margin: 25px 0 0;
+	padding: 0 0 0 35px;
+}
+#address{
+	background:url('../images/address-icon.png') no-repeat 150px 26px;
+	padding:5px 0px 0px 195px;
+}
+/*Конец блока сообщения*/
+/*Начало блока вкладки*/
+#tabs{
+	right: 0px;
+	top: -65px;
+	position: absolute;
+	margin: 30px 0 0;
+}
+#tabs li{
+	width: 70px;
+	height: 35px;
+	background: url('../images/tabs-sprite.png') no-repeat;
+	float: left;
+	margin: 0 1px 0 0;
+}
+#tabs li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-indent: -9000px;
+}
+#tabs #previous{
+	width:80px;
+	background-position: 0px 0px;
+}
+#tabs #previous:hover{
+	background-position: 0px -40px;
+}
+#tabs #previous.current, #tabs #previous:active{
+	background-position: 0px -80px;
+}
+#tabs #home{
+	background-position: -80px 0px;
+}
+#tabs #home:hover{
+	background-position: -80px -40px;
+}
+#tabs #home.current, #tabs #home:active{
+	background-position: -80px -80px;
+}
+#tabs #portfolio{
+	background-position: -150px 0px;
+}
+#tabs #portfolio:hover{
+	background-position: -150px -40px;
+}
+#tabs #portfolio.current, #tabs #portfolio:active{
+	background-position: -150px -80px;
+}
+#tabs #about{
+	background-position: -220px 0px;
+}
+#tabs #about:hover{
+	background-position: -220px -40px;
+}
+#tabs #about.current, #tabs #about:active{
+	background-position: -220px -80px;
+}
+#tabs #contact{
+	background-position: -290px 0px;
+}
+#tabs #contact:hover{
+	background-position: -290px -40px;
+}
+#tabs #contact.current, #tabs #contact:active{
+	background-position: -290px -80px;
+}
+#tabs #next{
+	width: 65px;
+	background-position: -360px 0px;
+}
+#tabs #next:hover{
+	background-position: -360px -40px;
+}
+#tabs #next.current, #tabs #next:active{
+	background-position: -360px -80px;
+}
+/*Конец блока вкладки*/
+/*Конец центрального блока*/
+/*Начало модуля блога*/
+#blog{
+	width: 385px;
+	float: left;
+	margin: 50px 15px 0px 0px;
+}
+#blog .module-header-bar{
+	width: 385px;
+	height: 29px;
+	background: url('../images/blog-header-bar.png') no-repeat;
+	margin: 0 0 15px;
+	padding: 13px 0 0;
+}
+#blog .blog-entry{
+	margin-left:15px;
+}
+#blog .blog-entry h5{
+	width:200px;
+	float:left;
+}
+#blog .blog-entry blockquote{
+	clear:both;
+	padding:10px 0px 10px 15px;
+}
+#blog .blog-entry .meta{
+	padding:4px 0 0;
+}
+#read-more-wrapper{
+	width:215px;
+	margin-top:10px;
+	float:right;
+}
+#read-more-wrapper a{
+	width:214px;
+	height:30px;
+	background:url('../images/read-more-button.png') no-repeat;
+	border:none;
+	display:block;
+	text-indent:-9000px;
+}
+#read-more-wrapper a:hover{
+	background-position: 0px -30px;
+}
+#read-more-wrapper a:active{
+	background-position: 0px -60px;
+}
+/*Конец модуля блога*/
+/*Начало модуля твиттера*/
+#twitter{
+	width: 375px;
+	margin: 38px 0px 0px 415px;
+}
+#twitter .module-header-bar{
+	width: 385px;
+	height: 40px;
+	background: url('../images/twitter-header-bar.png') no-repeat;
+	padding-top: 26px;
+}
+#twitter .tweet{
+	margin: 3px 0px 17px 30px;
+}
+#twitter .tweet img{
+	width: 29px;
+	height: 29px;
+	border: 1px solid #757575;
+	float: left;
+	margin-right: 15px;
+}
+#twitter .tweet h5{
+	top: -3px;
+	position: relative;
+}
+#get-tweets-wrapper{
+	width:215px;
+	float:right;
+	margin:9px 0 0;
+}
+#get-tweets-wrapper a{
+	width: 214px;
+	height: 30px;
+	background: url('../images/get-tweets-button.png') no-repeat;
+	border: none;
+	display: block;
+	text-indent: -9000px;
+}
+#get-tweets-wrapper a:hover{
+	background-position: 0px -30px;
+}
+#get-tweets-wrapper a:active{
+	background-position: 0px -60px;
+}
+/*Конец модуля твиттера*/
+/*Конец блока content*/
+/*Начало блока footer*/
+#footer-image{
+	width:100%;
+	height:50px;
+	background: #6eb9cc url('../images/footer-image.jpg') center no-repeat;
+	border-top: 2px groove #ffffff;
+	border-bottom:2px ridge #ffffff;
+}
+#footer-text{
+	width: 100%;
+	height: 37px;
+	background: url('../images/content-top-shadow.png') repeat-x;
+	padding-top: 13px;
+}
+/*Конец блока foote*/

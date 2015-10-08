@@ -1,0 +1,67 @@
+h1{
+    color: #4d4d4d;
+    font: 48px "Myriad Pro", Helvetica, Arial, sans-serif;
+}
+h1 a{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+h2{
+    color: #6ec9cc;
+    font: 12px "Myriad Pro", Helvetica, Arial, sans-serif;
+    letter-spacing: 28px;
+    text-transform: uppercase;
+}
+h3{
+    color: #6ec9cc;
+    font: 24px "Myriad Pro", Helvetica, Arial, sans-serif;
+}
+h4{
+    color: #ffffff;
+    font: 12px Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h4 a{
+    color: #ffffff;
+    text-decoration: none;
+}
+h5{
+    color: #6ec9cc;
+    font: 18px "Myriad Pro", Helvetica, Arial, sans-serif;
+}
+h5 a{
+    color: #6ec9cc;
+    text-decoration: none;
+}
+/*Paragraph styling*/
+p{
+    color: #525252;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+p.meta{
+    color: #707070;
+    font-size: 10px;
+    text-align: right;
+}
+#footer-text{
+    text-align: center;
+}
+#message p{
+    color: #4d4d4d;
+    line-height: 20px;
+}
+/*Link styling*/
+a{ 
+    color: #999999; 
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: none;
+}
+#action-bar a{
+    color: #ffffff;
+}
+#action-bar a:hover{
+    color: #6eb9cc;
+    text-decoration: none;
+}
